@@ -1,0 +1,23 @@
+package com.zak.isp.example.good;
+
+import java.util.Date;
+
+public class SimpleClock implements IClock {
+
+private Date date;
+	
+	public SimpleClock() {
+		this.date=new Date();
+	}
+	
+	@Override
+	public long getTime() {
+		return date.getTime();
+	}
+
+	@Override
+	public void setTime(long time) {
+		this.date=new Date(time);
+	}
+
+}

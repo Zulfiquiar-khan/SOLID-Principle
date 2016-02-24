@@ -1,0 +1,9 @@
+package com.zak.srp.example.bad;
+
+import java.util.List;
+
+public class DaoModule {
+	private List<Employee> employees;
+	
+	
+}

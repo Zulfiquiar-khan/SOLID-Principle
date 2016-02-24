@@ -1,0 +1,6 @@
+package com.zak.isp.example.good;
+
+public interface IClock {
+	public long getTime();
+	public void setTime(long time);
+}

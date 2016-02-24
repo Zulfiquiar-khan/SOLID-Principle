@@ -1,0 +1,17 @@
+package com.zak.isp.example.good;
+
+public class AlarmClock implements IAlarm {
+
+	@Override
+	public void setAlarm(long offset) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void startAlarm() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

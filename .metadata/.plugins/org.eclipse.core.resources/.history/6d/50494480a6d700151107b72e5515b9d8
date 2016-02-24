@@ -1,0 +1,26 @@
+package com.zak.srp.example.bad;
+
+import java.util.ArrayList;
+import java.util.List;
+
+//Suppose that i got a requirement to add new report structure for employee
+//also we need to have the older structures too 
+//In this scenario we would have to add one more conditional check in the below method and also
+//add a new method in the employee class in order to generate the new repost structure
+
+public class ReporterModule {
+	
+	List<String> generateReportType(List<Employee> employees,int type){
+		List<String> report=new ArrayList<>();
+		if(null!=employees && !employees.isEmpty()){
+			for(Employee e : employees){
+				if(type==1)
+					report.add(e.report1());
+				else 
+					report.add(e.report2());
+			}
+		}
+		
+		return report;
+	}
+}

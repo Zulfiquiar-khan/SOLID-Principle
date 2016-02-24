@@ -1,0 +1,8 @@
+package com.zak.ocp.example.good;
+
+public class EmployeeReportGeneratorFormat3 {
+	
+	private EmployeePaymentCalculator ePaymentCalculator=new EmployeePaymentCalculator();
+	
+
+}

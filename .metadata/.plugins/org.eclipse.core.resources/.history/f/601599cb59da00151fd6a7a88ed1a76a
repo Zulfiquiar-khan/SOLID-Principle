@@ -1,0 +1,9 @@
+package com.zak.dip.example.good;
+
+public class Copy {
+	
+	public void copy(IReader reader,PrintWriter printWriter){
+		String data=keyBoardReader.read();
+		printWriter.write(data);
+	}
+}

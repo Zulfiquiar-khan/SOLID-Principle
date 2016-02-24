@@ -1,0 +1,19 @@
+List of requirement changes required with the state of the code as in the com.zak.srp.example.bad package
+=========================================================================================================
+
+RC1. Presentation UI needs to display the total working hour only upto two decimal places :
+	
+	Solution in the current design:
+	------------------------------------
+	change the getTotalWorkingHour() to return the working hours upto two decimal places
+	
+	Problem with  the above solution
+	------------------------------------
+	This will break the salary business service as it will calculate incorrect payment due to lack of third decimal place value
+
+RC2.New business rule to decrease the hourly pay of each employee whose total working hour is less than given amount of working hour
+	
+	Solution with the current design:
+	------------------------------------
+	create a new method in the Employee class to return all the employees whose total working hour is less than or equal to given value
+	

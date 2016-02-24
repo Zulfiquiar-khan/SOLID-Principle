@@ -1,0 +1,9 @@
+package com.zak.dip.example.bad;
+
+public class Copy {
+	
+	
+	public void copy(){
+		
+	}
+}

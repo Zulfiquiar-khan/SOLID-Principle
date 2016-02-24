@@ -1,0 +1,12 @@
+package com.zak.ocp.example.good;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Employee employee=new Employee();
+		EmployeeReporteGenerator er=null;
+		employee.chk(er);
+	}
+
+}

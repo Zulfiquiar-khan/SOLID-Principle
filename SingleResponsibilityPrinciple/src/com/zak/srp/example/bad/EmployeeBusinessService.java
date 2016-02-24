@@ -1,0 +1,15 @@
+package com.zak.srp.example.bad;
+
+
+public class EmployeeBusinessService {
+	 
+	
+	public void updateEmployeesName(Employee employee){
+				if(null!=employee){
+					Employee dbEmp=employee.findById();
+					dbEmp.setName(employee.getName());
+					dbEmp.save();
+				}
+
+	}
+}

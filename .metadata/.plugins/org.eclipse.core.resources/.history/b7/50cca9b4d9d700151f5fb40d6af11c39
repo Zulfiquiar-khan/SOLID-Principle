@@ -1,0 +1,44 @@
+Open Closed Principle(OCP) states that a class, module or any software entity should be "Open for extension" and "Closed for modification"
+
+What does "Open for Extension" means???
+
+	Open for extension means that one should be able to add new features or requirements to an existing class , module or software entity.
+	
+What does "Closed for Modification" means??
+
+	Closed for modification means that one should not be able to change the existing code in a software entity, class or module .
+	
+Now according based on the above two definition we can describe OCP as below.
+
+	OCP says that we should be able to add new features or requirements to our existing class module or software entity without 
+	changing the existing code for that class module or software entity .
+	
+	The above idea seems a bit far fetched .. but believe me it is possible to achieve in many cases if not all.
+
+If your module or class conforms to OCP principle . You should be able to add new features without changing lots of code in lots of different places.
+
+
+Now lets go through all the classes in out com.zak.ocp.example.bad package one by one and try to see wether they conform to OCP or not
+
+1. Employee : 
+-------------	
+	This class holds data about an employee . So we need to change it if some new data is required for employees.
+	Nothing much we can do on that as for each new data we would have no choice but to create a new member in the Employee class.
+
+2. ReportBusinessServie :  
+-------------------------
+	
+	Lets assume a requirement change client now wants to have one more format of report along with the other three we already have.
+	Now to incorporate this new report format. We will have to add one new method in the  EmployeeReportGenerator to create a report for employee in the new format
+	and then add a new conditional block to check the type of report needed if it is of the fourth type then invoke the newly created method in 
+	the EmployeeReportGenerator . Then you are done.
+	
+	Now lets assume client again wants a one more report format along with the other four . In order to incorporate the new report format 
+	we would go ahead and do the above changes once again in the ReportBusinessService and EmployeeReportGenerator.
+	
+	From this thought experiment We can see that each type a new report format is required (i.e a feature) we have to change the existing class code in
+	order to incorporate the new feature .
+	
+	So my ReportBusinessService and EmployeeReportGenerator is Open for extension but not closed for modification and hence it violates OCP.
+	
+	

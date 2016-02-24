@@ -1,0 +1,29 @@
+package com.bac.srp.example.good;
+
+public class EmployeeReportGenerator {
+
+	public String getReport(Employee emp,int formatType){
+		return null;
+	}
+	
+	public String report1(){
+		//code to get the report in format 1
+		//apart from other info also uses the working hours map and hourly pay to  generate report
+		return null;
+	}
+	
+	//Because of change client also needs report in another format ,gives report about an employee in one more format
+	public String report2(){
+		//code to get the report in format 2
+		//apart from other info also uses the working hours map and hourly pay to  generate report
+		return null;
+	}
+
+	
+	//Because of change client also needs report in another format ,gives report about an employee in one more format
+	public String report3(){
+		//code to get the report in format 2
+		//apart from other info also uses the working hours map and hourly pay to  generate report
+		return null;
+	}
+}

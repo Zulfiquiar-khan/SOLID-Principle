@@ -1,0 +1,17 @@
+package com.zak.lsp.example.bad.one;
+
+public class Square extends Rectangle{
+	
+	public void setHeight(int height) {
+		this.setHeight(height);
+		this.setWidth(height);
+	}
+	
+	public int getWidth() {
+		return width;
+	}
+	
+	public void setWidth(int width) {
+		this.width = width;
+	}
+}

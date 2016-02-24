@@ -1,0 +1,12 @@
+package com.bac.srp.example.good;
+
+public class EmployeePaymentCalculator {
+	
+	public double calculatePay(Employee employee){
+		//code to calculate the payment to employee;
+		//apart from other info also uses the working hours map and hourly pay to calculate pay
+		this.getTotalWorkingHour(); //makes use of this method in order to calculate
+		return 0.0;
+	}
+
+}

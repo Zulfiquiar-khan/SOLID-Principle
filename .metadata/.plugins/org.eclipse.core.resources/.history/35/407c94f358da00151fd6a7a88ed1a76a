@@ -1,0 +1,5 @@
+package com.zak.dip.example.bad;
+
+public class FileReader {
+
+}

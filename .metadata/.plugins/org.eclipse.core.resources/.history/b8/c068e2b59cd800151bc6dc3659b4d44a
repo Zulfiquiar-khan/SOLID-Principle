@@ -1,0 +1,9 @@
+package com.zak.lsp.example.good.one;
+
+public class Square implements IArea{
+	
+	private int side(){
+		
+	}
+	
+}

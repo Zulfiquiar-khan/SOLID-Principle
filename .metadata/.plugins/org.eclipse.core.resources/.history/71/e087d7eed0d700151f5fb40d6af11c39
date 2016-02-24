@@ -1,0 +1,29 @@
+package com.bac.srp.example.good;
+
+import java.util.List;
+
+public class EmployeeBusinessService {
+	 
+	EmployeeDataAccess eDataAccess;
+	
+	public void updateEmployeesName(Employee employee){
+				if(null!=employee){
+					Employee dbEmp=employee.findById(employee.getEmpId());
+					dbEmp.setName(employee.getName());
+					dbEmp.save();
+				}
+
+	}
+	
+	public void updateEmployeePenalty(Employee employee){
+		List<Employee> empList=employee.findByTotalWorkingHour(50L);
+		if(null!=empList && !empList.isEmpty()){
+			for(Employee e: empList){
+				if(null!=e){
+					e.setHourlyPay(e.getHourlyPay()-10);
+					e.save();
+				}
+			}
+		}
+	}
+}

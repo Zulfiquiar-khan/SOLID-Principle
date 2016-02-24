@@ -1,0 +1,20 @@
+package com.zak.ocp.example.bad;
+
+import java.util.ArrayList;
+import java.util.List;
+
+
+public class SalaryBusinessService {
+	
+	private EmployeePaymentCalculator ePaymentCalculator=new EmployeePaymentCalculator();
+
+	public List<Double> getPayOfEmployees(List<Employee> employees){
+		List<Double> payList=new ArrayList<>();
+		if(null!=employees && !employees.isEmpty()){
+			for(Employee e: employees){
+				payList.add(ePaymentCalculator.calculatePay(e));
+			}
+		}
+		return payList;
+	}
+}

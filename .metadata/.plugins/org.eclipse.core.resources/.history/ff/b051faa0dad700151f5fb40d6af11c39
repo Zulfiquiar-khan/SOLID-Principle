@@ -1,0 +1,29 @@
+package com.zak.ocp.example.good;
+
+public class EmployeeReportGenerator {
+	
+	private EmployeePaymentCalculator ePaymentCalculator=new EmployeePaymentCalculator();
+	
+	public String report1(Employee employee){
+		//code to get the report in format 1
+		//apart from other info also uses the working hours map and hourly pay to  generate report
+		ePaymentCalculator.calculatePayTwoDecimal(employee);
+		return null;
+	}
+	
+	public String report2(Employee employee){
+		//code to get the report in format 2
+		//apart from other info also uses the working hours map and hourly pay to  generate report
+		ePaymentCalculator.calculatePayTwoDecimal(employee);
+		return null;
+	}
+
+
+	public String report3(Employee employee){
+		//code to get the report in format 2
+		//apart from other info also uses the working hours map and hourly pay to  generate report
+		ePaymentCalculator.calculatePayTwoDecimal(employee);
+		return null;
+	}
+	
+}

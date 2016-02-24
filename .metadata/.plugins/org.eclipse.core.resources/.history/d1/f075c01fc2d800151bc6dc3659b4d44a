@@ -1,0 +1,20 @@
+package com.zak.lsp.example.bad.three;
+
+public class Task {
+	
+	private boolean status;
+
+	public boolean isStatus() {
+		return status;
+	}
+
+	public void setStatus(boolean status) {
+		this.status = status;
+	}
+	
+	public void close(){
+		
+	}
+	
+	
+}

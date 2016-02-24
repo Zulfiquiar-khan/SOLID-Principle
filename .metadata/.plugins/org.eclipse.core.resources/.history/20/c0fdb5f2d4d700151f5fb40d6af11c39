@@ -1,0 +1,1 @@
+Open Closed Principle(OCP) states that a class, module or any software entity should be "Open for extension" and "Closed for modification"

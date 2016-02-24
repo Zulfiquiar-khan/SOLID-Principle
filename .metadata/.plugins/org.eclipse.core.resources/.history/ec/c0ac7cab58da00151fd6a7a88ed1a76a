@@ -1,0 +1,11 @@
+package com.zak.dip.example.bad;
+
+public class Copy {
+	
+	private KeyBoardReader keyBoardReader;
+	private PrintWriter printWriter;
+	
+	public void copy(){
+		
+	}
+}

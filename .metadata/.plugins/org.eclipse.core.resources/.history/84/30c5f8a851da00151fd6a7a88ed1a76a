@@ -1,0 +1,30 @@
+package com.zak.isp.example.bad;
+
+import java.util.Date;
+
+public class SimpleClock implements IClock {
+	
+	private Date date;
+	
+	public SimpleClock() {
+		this.date=new Date(System.currentTimeMillis());
+	}
+	
+	@Override
+	public long getTime() {
+		return date.getTime();
+	}
+
+	@Override
+	public void setTime() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void setAlarm() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

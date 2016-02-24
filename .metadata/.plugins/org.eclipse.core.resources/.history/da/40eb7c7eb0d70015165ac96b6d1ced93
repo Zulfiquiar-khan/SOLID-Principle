@@ -1,0 +1,20 @@
+package com.bac.srp.example.good;
+
+import java.util.List;
+
+public class EmployeeDaoModule {
+	 
+	
+	public void updateEmployeesName(Employee employee){
+				if(null!=employee){
+					Employee dbEmp=employee.findById();
+					dbEmp.setName(employee.getName());
+					dbEmp.save();
+				}
+
+	}
+	
+	public void updateEmployeeHourlyPayBasedOnWorkingHour(){
+		List<Employee> empList=
+	}
+}

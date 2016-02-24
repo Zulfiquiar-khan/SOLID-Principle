@@ -1,0 +1,13 @@
+Open Closed Principle(OCP) states that a class, module or any software entity should be "Open for extension" and "Closed for modification"
+
+What does "Open for Extension" means???
+
+	Open for extension means that one should be able to add new features or requirements to an existing class , module or software entity.
+	
+What does "Closed for Modification" means??
+
+	Closed for modification means that one should be able to add new feature in a software entity, class or module without changing the existing code.
+	
+Now according based on the above two definition we can describe OCP as below.
+
+	

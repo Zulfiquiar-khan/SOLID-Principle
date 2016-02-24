@@ -1,0 +1,23 @@
+package com.zak.isp.example.bad;
+
+public class SimpleClock implements IClock {
+
+	@Override
+	public void getTime() {
+		
+		
+	}
+
+	@Override
+	public void setTime() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void setAlarm() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

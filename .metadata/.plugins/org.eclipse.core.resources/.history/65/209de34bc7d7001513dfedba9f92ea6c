@@ -1,0 +1,6 @@
+List of requirement changes required with the state of the code as in the com.zak.srp.example.bad package
+=========================================================================================================
+
+1. Presentation UI needs to display the total working hour only upto two decimal places :
+	Solution with the current situation:
+	change the getTotalWorkingHour() to return the working hours upto two decimal places

@@ -1,0 +1,7 @@
+package com.zak.lsp.example.bad.two;
+
+public class StaticFactory {
+	public static Rectangle getRectangle() {
+		return new Square();
+	}
+}

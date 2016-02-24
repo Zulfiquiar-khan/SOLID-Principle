@@ -1,0 +1,11 @@
+package com.zak.bad.example.good.two;
+
+public class Graph2D {
+	
+	private int x;
+	private int y;
+	
+	public void draw(){
+		System.out.println("Drawing 2D graph at "+x+","+y);
+	}
+}

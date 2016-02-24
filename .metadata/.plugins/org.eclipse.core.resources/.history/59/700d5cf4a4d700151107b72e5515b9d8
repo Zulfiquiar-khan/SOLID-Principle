@@ -1,0 +1,26 @@
+package com.zak.srp.example.bad;
+
+import java.util.List;
+
+
+
+public class DaoModule {
+	 
+	
+	public void saveEmployees(List<Employee> employees){
+		for(Employee e:employees){
+			e.save();
+		}
+	}
+	
+	public void findEmployeesById(List<Employee> employees){
+		for(Employee e : employees){
+			e.findById();
+		}
+	}
+	
+	//Suppose i got a new requirement to add one new dao method 
+	//in order to fetch all the employees based on their name
+	//because of this you have to add new methode as below
+	public void findEmplyeesByName()
+}

@@ -1,0 +1,30 @@
+package com.bac.srp.example.good;
+
+import java.util.List;
+
+
+public class EmployeeDaoModule {
+	 
+	public void saveEmployee(List<Employee> employees){
+		for(Employee e : employees){
+			e.findById();
+		}
+	}
+	
+	public void findEmployeesById(List<Employee> employees){
+		for(Employee e : employees){
+			e.findById();
+		}
+	}
+	
+	//Suppose i got a new requirement to add one new dao method 
+	//in order to fetch all the employees based on their name
+	//because of this you have to add new method as below
+	public void findEmplyeesByName(List<Employee> employees){
+		for(Employee e : employees){
+			//you also need to add the below method in employee class
+			e.findByName();
+		}
+
+	}
+}

@@ -1,0 +1,16 @@
+package com.bac.srp.example.good;
+
+import java.util.List;
+
+
+public class EmployeeDaoModule {
+	 
+	
+	public void changeEmployeesName(List<Employee> employees){
+		if(null!=employees && !employees.isEmpty()){
+			for(Employee e: employees){
+				
+			}
+		}
+	}
+}

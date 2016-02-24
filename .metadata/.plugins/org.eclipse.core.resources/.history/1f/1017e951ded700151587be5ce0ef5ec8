@@ -1,0 +1,13 @@
+package com.zak.ocp.example.good;
+
+public class EmployeeReportGeneratorFormat2 implements EmployeeReporteGenerator{
+
+	private EmployeePaymentCalculator ePaymentCalculator=new EmployeePaymentCalculator();
+	
+	@Override
+	public String report(Employee employee) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

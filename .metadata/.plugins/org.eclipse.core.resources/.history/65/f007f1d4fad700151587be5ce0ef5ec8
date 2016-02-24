@@ -1,0 +1,71 @@
+Liskov's Substitution Principle
+===============================
+
+Given by Barbara Liskov in the year of 1987 (Java was created in the year of 1995)
+
+Definitions
+============
+
+ If S is a subtype of T in a program then all objects of type T in the program can be substituted to objects of type S 
+ without changing any desired properties of the program(eg correctness).
+ 
+ Supertypes are substitutable by their subtype.
+ 
+ 
+ "objects in a program should be replaceable with instances of their subtypes without altering the correctness of that program" 
+ 
+ "it means that we must make sure that new derived classes are extending the base classes without changing their behavior"
+ 
+ 
+ Behavioral subtyping is a stronger notion than typical subtyping of functions defined in type theory, 
+ which relies only on the contravariance of argument types and covariance of the return type
+ 
+ Behavioral subtyping is trivially undecidable in general: if q is the property "method for x always terminates",
+ then it is impossible for a program (e.g., a compiler) to verify that it holds true for some subtype S of T, even if q does hold for T.
+ Nonetheless, the principle is useful in reasoning about the design of class hierarchies.
+ 
+ Liskov's principle imposes some standard requirements on signatures which have been adopted in newer object-oriented programming languages :
+
+    Contravariance of method arguments in the subtype.
+    Covariance of return types in the subtype.
+    No new exceptions should be thrown by methods of the subtype, 
+    except where those exceptions are themselves subtypes of exceptions thrown by the methods of the supertype.
+
+In addition to the signature requirements, the subtype must meet a number of behavioral conditions. 
+These are detailed in a terminology resembling that of design by contract methodology, 
+leading to some restrictions on how contracts can interact with inheritance:
+
+    Preconditions cannot be strengthened in a subtype. Eg supertype method had a null check , subtype removed that null check
+    Postconditions cannot be weakened in a subtype. Eg as a postcondition certain property is gaurateed to not be null and while verrriding this guaratee is eliminated
+    Invariants of the supertype must be preserved in a subtype.
+    History constraint (the "history rule"). 
+    Objects are regarded as being modifiable only through their methods (encapsulation). 
+    Since subtypes may introduce methods that are not present in the supertype, 
+    the introduction of these methods may allow state changes in the subtype that are not permissible in the supertype. 
+    The history constraint prohibits this. It was the novel element introduced by Liskov and Wing. 
+    A violation of this constraint can be exemplified by defining a mutable point as a subtype of an immutable point.
+     This is a violation of the history constraint, because in the history of the immutable point, 
+     the state is always the same after creation, so it cannot include the history of a mutable point in general. 
+     Fields added to the subtype may however be safely modified because they are not observable through the supertype methods. 
+     Thus, one can derive a circle with fixed center but mutable radius from immutable point without violating LSP.
+ 
+ 
+ Preconditions
+ =============
+ 	In computer programming, a precondition is a condition or 
+ 	predicate that must always be true just prior to the execution of some section of code or before an operation in a formal specification.
+ 	
+ 	The precondition for any routine defines any constraints on object state which are necessary for successful execution. 
+ 	From the program developer's viewpoint, this constitutes the routine caller's portion of the contract. 
+ 	The caller then is obligated to ensure that the precondition holds prior to calling the routine.
+ 	
+ Postconditions
+ ==============
+   
+   In computer programming, a postcondition is a condition or predicate that must always be true just after 
+   the execution of some section of code or after an operation in a formal specification. 
+   
+   The postcondition for any routine is a declaration of the properties which are guaranteed upon completion of the routine's execution.
+   As it relates to the routine's contract, the postcondition offers assurance to potential callers 
+   that in cases in which the routine is called in a state in which its precondition holds, the properties declared by the postcondition are assured.
+   

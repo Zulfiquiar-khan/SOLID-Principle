@@ -1,0 +1,18 @@
+package com.zak.bad.example.good.two;
+
+public class Plotter {
+
+	public static void main(String[] args) {
+		
+		Graph2D g=new Graph2D();
+		g.setX(10);
+		g.setY(11);
+		g.draw();
+		
+		g=new Graph3D();
+		g.setX(10);
+		g.setY(11);
+		g.draw();
+	}
+
+}

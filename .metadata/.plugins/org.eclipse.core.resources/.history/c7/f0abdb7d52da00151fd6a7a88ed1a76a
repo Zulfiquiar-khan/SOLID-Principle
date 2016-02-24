@@ -1,0 +1,34 @@
+package com.zak.isp.example.bad;
+
+import java.util.Date;
+
+public class AlarmClock implements IClock{
+	private Date date;
+	private Date alarmDate;
+	
+	public AlarmClock() {
+		this.date=new Date(System.currentTimeMillis());
+	}
+	
+	@Override
+	public long getTime() {
+		return date.getTime();
+	}
+
+	@Override
+	public void setTime(long time) {
+		this.date=new Date(time);
+	}
+
+	@Override
+	public void setAlarm(long offset) {
+		this.alarmDate=new Date(this.date.getTime()+offset);
+		
+	}
+
+	@Override
+	public void startAlarm() {
+		
+	}
+
+}

@@ -1,0 +1,14 @@
+package com.zak.srp.example.bad;
+
+public class Employee {
+	
+	public void save(){
+		//Code to save the employee in database
+	}
+	
+	public Employee findById(long id){
+		Employee emp=null;
+		return emp;
+	}
+	
+}

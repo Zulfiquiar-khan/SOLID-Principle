@@ -1,0 +1,10 @@
+package com.zak.bad.example.good.two;
+
+public class Graph3D extends Graph2D{
+	
+	private int z;
+	
+	public void draw(){
+		System.out.println("Drawing 3D graph at "+super.getX()+","+super.getY()+","+z);
+	}
+}

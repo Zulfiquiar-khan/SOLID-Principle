@@ -1,0 +1,32 @@
+Open Closed Principle(OCP) states that a class, module or any software entity should be "Open for extension" and "Closed for modification"
+
+What does "Open for Extension" means???
+
+	Open for extension means that one should be able to add new features or requirements to an existing class , module or software entity.
+	
+What does "Closed for Modification" means??
+
+	Closed for modification means that one should not be able to change the existing code in a software entity, class or module .
+	
+Now according based on the above two definition we can describe OCP as below.
+
+	OCP says that we should be able to add new features or requirements to our existing class module or software entity without 
+	changing the existing code for that class module or software entity .
+	
+	The above idea seems a bit far fetched .. but believe me it is possible to achieve in many cases if not all.
+
+If your module or class conforms to OCP principle . You should be able to add new features without changing lots of code in lots of different places.
+
+
+Now lets go through all the classes in out com.zak.ocp.example.bad package one by one and try to see wether they conform to OCP or not
+
+1. Employee : 
+-------------	
+	This class holds data about an employee . So we need to change it if some new data is required for employees.
+	Nothing much we can do on that as for each new data we would have no choice but to create a new member in the Employee class.
+
+2. ReportBusinessServie :  
+-------------------------
+	
+	Lets assume a requirement change client now wants to have one more format of report along with the other three we already have.
+	

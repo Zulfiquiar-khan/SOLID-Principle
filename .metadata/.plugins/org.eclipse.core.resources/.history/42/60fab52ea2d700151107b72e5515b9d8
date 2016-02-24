@@ -1,0 +1,17 @@
+package com.zak.srp.example.bad;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class ReporterModule {
+	
+	List<String> generateReportType(List<Employee> employees,int type){
+		List<String> report=new ArrayList<>();
+		if(null!=employees && !employees.isEmpty()){
+			for(Employee e : employees){
+				
+			}
+		}
+	}
+	
+}

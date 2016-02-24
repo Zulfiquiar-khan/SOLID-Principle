@@ -1,0 +1,12 @@
+package com.bac.srp.example.good;
+
+import java.util.List;
+
+
+public class EmployeeDaoModule {
+	 
+	
+	public void changeEmployeesName(List<Employee> employees){
+		
+	}
+}

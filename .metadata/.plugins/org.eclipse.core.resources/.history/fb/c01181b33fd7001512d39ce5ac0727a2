@@ -1,0 +1,17 @@
+package com.zak.srp.example.bad;
+
+import java.util.List;
+
+public class DaoModule {
+	private List<Employee> employees;
+	
+	public void saveEmployees(){
+		for(this.employees){
+			
+		}
+	}
+	
+	public void findEmployee(){
+		
+	}
+}

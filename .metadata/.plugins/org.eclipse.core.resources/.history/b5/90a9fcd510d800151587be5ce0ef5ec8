@@ -1,0 +1,16 @@
+package com.zak.lsp.example.bad.one;
+
+public class ClientCode {
+
+	
+	public void process(){
+		Rectangle r=getRectangle();
+		
+	}
+
+	
+	
+	private Rectangle getRectangle() {
+		return new Square();
+	}
+}

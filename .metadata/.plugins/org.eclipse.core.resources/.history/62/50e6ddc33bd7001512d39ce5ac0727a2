@@ -1,0 +1,19 @@
+package com.zak.srp.example.bad;
+
+public class Employee {
+	
+	private String name;
+	private Long empId;
+	
+	public void save(){
+		//Code to save the employee in database
+	}
+	
+	public Employee findById(long id){
+		Employee emp=null;
+		//code to get the employee from the database based on the employee id
+		return emp;
+	}
+	
+	public double 
+}

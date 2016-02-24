@@ -1,0 +1,5 @@
+package com.zak.isp.example.good;
+
+public interface IClock {
+
+}

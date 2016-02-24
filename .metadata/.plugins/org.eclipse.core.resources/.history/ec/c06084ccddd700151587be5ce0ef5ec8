@@ -1,0 +1,7 @@
+package com.zak.ocp.example.good;
+
+public interface EmployeePaymentCalculator {
+	
+	public double calculatePay(Employee employee)
+	public double calculatePayTwoDecimal(Employee employee)
+}

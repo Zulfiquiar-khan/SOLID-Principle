@@ -1,0 +1,25 @@
+package com.zak.srp.example.change.bad;
+
+import java.util.ArrayList;
+import java.util.List;
+
+
+
+public class ReporterBusinessService {
+	
+	List<String> generateReportType(List<Employee> employees,int type){
+		List<String> report=new ArrayList<>();
+		if(null!=employees && !employees.isEmpty()){
+			for(Employee e : employees){
+				if(type==1)
+					report.add(e.report1());
+				else if(type==2)
+					report.add(e.report2());
+				else
+					report.add(e.report3())
+			}
+		}
+		
+		return report;
+	}
+}

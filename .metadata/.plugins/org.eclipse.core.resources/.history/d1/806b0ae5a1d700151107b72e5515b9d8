@@ -1,0 +1,11 @@
+package com.zak.srp.example.bad;
+
+import java.util.List;
+
+public class ReporterModule {
+	
+	List<String> generateReportType(List<Employee> employees,int type){
+		
+	}
+	
+}

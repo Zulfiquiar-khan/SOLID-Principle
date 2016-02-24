@@ -1,0 +1,14 @@
+Liskov's Substitution Principle
+===============================
+
+Given by Barbara Liskov in the year of 1987 (Java was created in the year of 1995)
+
+Definitions
+============
+
+ If S is a subtype of T in a program then all objects of type T in the program can be substituted to objects of type S 
+ without changing any desired properties of the program.
+ 
+ Supertypes are substitutable by their subtype.
+ 
+ 
